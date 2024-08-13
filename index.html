@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fa97ae8dc.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(243,243,243);
+            height: 170vh;
+        }
+        .fixed{
+            width: 150px;
+            height: 35px;
+            background-color: black;
+            position: fixed;
+            left: 1316px;
+            bottom: 20px;
+            border-radius: 30px;
+        }
+        .huncho{
+            display: flex;
+            padding: 10px 15px;
+            gap: 8px;
+            color: white;
+        }
+        .vince{
+            background-color: rgb(255,255,255);
+            width: 90%;
+            height: 164vh;
+            margin: auto;
+        }
+        .section1{
+            width: 100%;
+            height: 135px;
+            background-color: rgb(255,255,255);
+            display: flex;
+            /* position: sticky; */
+        }
+        .part1{
+            width: 50%;
+            background-color: rgb(255,255,255);
+        }
+        .part2{
+            width: 50%;
+            background-color: rgb(255,255,255);
+            text-align: right;
+            padding: 7px 10px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 12px;
+            color: black;
+            cursor: pointer;
+        } 
+        .jnjn:hover .hoverbox{
+            display: block;
+        }
+        .hoverbox{
+            width: 220px;
+            height: 150px;
+            background-color: rgb(255,255,255);
+            box-shadow: 0 0 15px 5px rgb(0,0,0,0.2);
+            display: none;
+            float: right;
+            margin-top: 72px;
+            margin-left: 40px;
+            border-top: 2.2px solid orange;
+        }
+        .poppins-semibold:hover{
+            color: orange;
+        }
+        .gripa{
+            display: block;
+            text-decoration: none;
+            /* float: left; */
+            padding: 10px;
+            color: black;
+            margin-right: 12px;
+        }
+        .section2{
+            width: 100%;
+            height: 160px;
+            background-color: rgb(255,255,255);
+            margin-top: 25px;
+            text-align: center;
+        }
+        .connect{
+            gap: 22px;
+            display: flex;
+            margin-top: 144px;
+        }
+        .section3{
+            width: 100%;
+            height: 900px;
+            margin-left: 72px;
+            background-color: rgb(245,245,245);
+            border-radius: 20px;
+        }
+        .resize{
+            width: 100%;
+            height: 480px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .section4{
+            width: 100%;
+            height: 900px;
+            background-color: rgb(245,245,245);
+            margin-right: 72px;
+            border-radius: 20px;
+        }
+        .got{
+            height: 60px;
+            width: 180px;
+            margin-left: 70px;
+            margin-top: 15px;
+        }
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 12px;
+            margin-top: 38px;
+            margin-right: 89px;
+            background-color: rgb(255,255,255);
+            width: 40px;
+            float: right;
+        }
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 45px;
+        }
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            width: 1150px;
+            /* text-align: center; */
+            margin: auto;
+        }
+        .montserratuniquifier1{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 23px;
+            line-height: 33.35px;
+            margin-top: 20px;
+            margin-left: 20px;
+            letter-spacing: 1px;
+        }
+        .montserratuniquifier2{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 13px;
+            padding: 7px;
+            line-height: 18.2px;
+            border: 1px solid rgb(234,91,12);
+            background-color: rgb(234,91,12);
+            color: white;
+            width: 232px;
+            margin-left: 20px;
+        }
+        .alltoge{
+            display: flex;
+            gap: 90px;
+            margin-top: 55px;
+        }
+        .aksy{
+            display: block;
+        }
+        .poppins_tokinto-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 14px;
+            color: #666666;
+            text-align: center;
+        }
+        .portable{
+            width: 45px;
+            height: 45px;
+            align-items: center;
+           
+        }
+        .move{
+            margin-left: 50px;
+        }
+        .move2{
+            margin-left: 40px;
+        }
+        .move3{
+            margin-left: 20px;
+        }
+        .yeepa{
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            line-height: 15.6px;
+        }
+        .poppins_topinpin-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12px;
+            color: #808080;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .bigdivs{
+            width: 540px;
+            height: 90px;
+            background-color: rgb(245,245,245);
+            display: flex;
+            overflow-x: auto;
+            margin: auto;
+            gap: 25px;
+            margin-top: 14px;
+        }
+        /* .smalldivs{
+            padding: 10px;
+            border-radius: 16px;
+            width: 160px;
+            height: 30px;
+        } */
+        .before{
+            border-radius: 16px;
+            width: 160px;
+            height: 70px;
+            margin-top: 3px;
+        }
+        .bigdivs::-webkit-scrollbar{
+            /* display: none; */
+            background-color: rgb(245,245,245);
+            width: 6px;
+            height: 8px;
+        }
+        .bigdivs::-webkit-scrollbar-thumb{
+            /* background-color: silver;
+            border-radius: 24px; */
+            visibility: hidden;
+        }
+        .bigdivs:hover::-webkit-scrollbar-thumb{
+            visibility: visible;
+            background-color: lightgrey;
+            border-radius: 50px;
+            /* width: 3px;
+            height: 4px; */
+        }
+        .filling{
+            width: 120px;
+            height: 42px;
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            background-color: rgb(250,100,0);
+            border: none;
+            border-radius: 22px;
+            /* margin: auto; */
+            margin-top: 40px;
+            align-items: center;
+        }
+        .hactr{
+           text-align: center;
+        }
+        .contain{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <div class="huncho">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h1 class="yeepa">Quick Response</h1>
+        </div>
+    </div>
+    <main class="vince">
+        <div class="section1">
+            <div class="part1">
+                <img src="https://landwey.ng/wp-content/uploads/2020/01/logoww.png" class="got" alt="">
+            </div>
+            <div class="part2">
+                <div class="jnjn">
+                    <h1 class="poppins-semibold">About</h1>
+                    <div class="hoverbox">
+                        <a href="https://landwey.ng/about-us/" class="gripa">Our Wey</a>
+                        <a href="https://www.youtube.com/channel/UCiHLnXGHTxqos-Liq3TL7HA" class="gripa">WeyTV</a>
+                        <a href="https://landwey.ng/blog/" class="gripa">Blog</a>
+                        <a href="https://landwey.ng/contact-us/" class="gripa">Contact Us</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <h1 class="poppins-bold">New homes like no other.</h1>
+            <h2 class="poppins-regular">When you walk into a Landwey home, you’ll know that everything we do is designed around you. Our homes regularly achieve recognition for their design excellence, build quality and customer satisfaction.</h2>
+        </div>
+        <div class="connect">
+            <div class="section3">
+                <img src="https://landwey.ng/wp-content/uploads/2023/01/TErra-gardens.jpg" class="resize" alt="">
+                <p class="montserratuniquifier1">Terraces at Terra Gardens</p>
+                <h1 class="montserratuniquifier2">Monastery Road, Sangotedo, Lekki</h1>
+                <div class="alltoge">
+                    <div class="aksy">
+                        <img src="https://landwey.ng/wp-content/uploads/2021/09/dumbbell.png" class="portable move" alt="">
+                        <h1 class="poppins_tokinto-semibold move2">Gym</h1>
+                    </div>
+                    <div class="aksy">
+                        <img src="https://landwey.ng/wp-content/uploads/2021/09/smartphone.png" class="portable move3" alt="">
+                        <h1 class="poppins_tokinto-semibold">Smart Entry</h1>
+                    </div>
+                    <div class="aksy">
+                        <img src="https://landwey.ng/wp-content/uploads/2021/09/bathrobe.png" class="portable" alt="">
+                        <h1 class="poppins_tokinto-semibold">Spa</h1>
+                    </div>
+                    <div class="aksy">
+                        <img src="https://landwey.ng/wp-content/uploads/2021/09/router.png" class="portable" alt="">
+                        <h1 class="poppins_tokinto-semibold">WiFi</h1>
+                    </div>
+                    </div>
+                    <div class="bigdivs">
+                        <a href="https://landwey.ng/wp-content/uploads/2023/01/img3-1.jpg">
+                            <img src="https://landwey.ng/wp-content/uploads/2023/01/img3-1.jpg" class="before" alt="">
+                        </a>
+                        <a href="https://landwey.ng/wp-content/uploads/2023/01/image-001.jpg">
+                            <img src="https://landwey.ng/wp-content/uploads/2023/01/image-001.jpg" class="before" alt="">
+                        </a>
+                        <a href="https://landwey.ng/wp-content/uploads/2023/01/image-000.jpg">
+                            <img src="https://landwey.ng/wp-content/uploads/2023/01/image-000.jpg" class="before" alt="">
+                        </a>
+                        <a href="https://landwey.ng/wp-content/uploads/2023/01/image-001.jpg">
+                            <img src="https://landwey.ng/wp-content/uploads/2023/01/image-001.jpg" class="before" alt="">
+                        </a>
+                        <a href="https://landwey.ng/wp-content/uploads/2023/01/image-000.jpg">
+                            <img src="https://landwey.ng/wp-content/uploads/2023/01/image-000.jpg" class="before" alt="">
+                        </a>                                          
+                    </div>
+                    <div class="contain">
+                        <a href="https://landwey.ng/terra-gardens/" class="hactr">
+                            <button class="filling">see more</button>
+                        </a>
+                    </div>
+                </div>
+            <div class="section4"></div>
+        </div>
+    </main>
+    <div>
+        <h1 class="poppins_topinpin-semibold">.LandWey, a member of Oxygen Holdings</h1>
+    </div>
+</body>
+</html>
